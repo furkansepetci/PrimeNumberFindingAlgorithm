@@ -5,7 +5,7 @@ func findPrimeNumber (border: Int ) {
     var PrimeNumberArray = [2]
     var counter = 0
     var counterTwo = 0
-    let myArray : [Int] = Array(2...border)
+    let myArray : [Int] = Array(2...border).filter{$0 % 2 != 0}
     var divisorArray = [Int]()
     
     firstFor : for number in myArray {
