@@ -16,6 +16,9 @@ func findPrimeNumber (border: Int ) {
                 counter+=1
             }
             counterTwo+=1 // Indicates how many times the for loop is run.
+            if counter > 2{
+                break
+            }
         }
         if counter<3 {
             PrimeNumberArray.append(number)
